@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #081f5c;
+    color: white;
+    height: 70px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(0, 225, 225);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+}
+.nav-links a:hover{
+    color:rgb(0, 225, 225);
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    left: 50%;
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+        gap:20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background: #2D4678;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin-left:200px;
+}
+
+.content {
+    flex: 1;
+    margin-left: -150px;
+}
+
+.text p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #ff6600; /* Adjust color */
+    font-weight: bold;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn .holder {
+    margin-top: 20px;
+}
+
+.holder a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: -100px;
+}
+.hello{
+   color:#ff6600;
+   font-size: 15px;
+}
+.text p .div{
+    color: rgb(0, 225, 225);
+    font-weight: 200px;
+    font-size:50px;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1100px;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Styling the summary and details */
+details {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border-left: 4px solid #1abc9c;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1abc9c;
+    transition: color 0.3s ease;
+}
+
+summary:hover {
+    color: #16a085;
+}
+
+details p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+.card {
+    max-width: 600px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.sections {
+    margin-bottom: 15px;
+}
+.sections h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4A5568;
+    margin-bottom: 5px;
+}
+.sections p {
+    color: #718096;
+}
+.progress-bar {
+    background-color: #E2E8F0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px;
+}
+.progress {
+    height: 100%;
+    background-color: #4A90E2;
+}
+.bg-gray-100{
+    background:#16a085;
+}
+.body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+.contact-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+.contact-container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+.input-group input::placeholder, .input-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.submit-btn {
+    background: #ff7eb3;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.submit-btn:hover {
+    background: #ff4f8b;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #ff7eb3;
+}
+.footer{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    background: #081f5c;
+    margin-top: -10px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+}

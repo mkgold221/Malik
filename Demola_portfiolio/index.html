@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="/style.css">
+   <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">MOLA</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#resume">Resume</a></li> -->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <p>
+                        <span class="hello">Hello,</span> <br>
+                        <span class="div">  I'm Ademola </span><br>
+                        <span class="highlight" id="changingText">Python Programmer</span>.
+                    </p>
+                </div>
+                <div class="btn">
+                    <div class="holder">
+                        <a href="#">Download CV</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="img">
+                <img src="logo.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="logo.jpg" alt="Cleaning Team">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <details>
+                    <summary>Who We Are</summary>
+                    <p>
+                        We are Python developers passionate about building efficient, scalable, and innovative solutions. With expertise in web development, automation, and data management, we use frameworks like Django, Flask, and Tkinter to deliver high-quality, optimized applications. 🚀
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Our Mission</summary>
+                    <p>
+                        At Mola, our mission is to leverage the power of Python to build efficient, scalable, and innovative solutions. With expertise in web development, data management, and automation, we aim to create seamless digital experiences that solve real-world problems. Through continuous learning and adaptability, we strive to push the boundaries of technology while delivering high-quality and impactful projects.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Why Choose Us?</summary>
+                    <p>
+                        –✅ Expertise in Python Development – From web applications to automation, we <br>craft efficient and scalable solutions.
+                        <br>
+                        –✅ Cutting-Edge Technologies – We stay ahead with the latest frameworks like <br>Django, Flask, and Tkinter.
+                        <br>
+                        – ✅ Creative & Analytical Thinking – Combining logic with creativity for <br>innovative problem-solving.
+                        <br>
+                        – ✅ Client-Centric Solutions – Tailored projects that meet your unique needs and <br> business goals.
+                        <br>
+                        – ✅ Commitment to Excellence – Delivering high-quality, well-documented, and <br> maintainable code.
+                        <br>
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="bg-gray-100 flex items-center justify-center min-h-screen" id="skills">
+        <div class="card">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">S K I L L S</h1>
+            
+            <div class="sections">
+                <h2>Programming Languages</h2>
+                <p>Python (90%)</p>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            
+            <div class="sections">
+                <h2>Frameworks & Libraries</h2>
+                <p>Django, Flask, Tkinter (75%)</p>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+            
+            <div class="sections">
+                <h2>Databases</h2>
+                <p>SQL with Python (70%)</p>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+            </div>
+            
+            <div class="sections">
+                <h2>Soft Skills</h2>
+                <p>Email Marketing, Graphic Design, Excel, Entrepreneur (65%)</p>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+        </div>
+</section> 
+<section id="contact" class="body">
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</section>
+<div class="footer">
+    &copy; 2025 YourPortfolio. All rights reserved.
+</div>
+
+</body>
+</html>
